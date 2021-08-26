@@ -1,0 +1,12 @@
+source $HOME/AppData/local/nvim/plug.vim
+source $HOME/AppData/local/nvim/coc_settings.vim
+source $HOME/AppData/local/nvim/telescope_settings.vim
+source $HOME/AppData/local/nvim/general.vim
+source $HOME/AppData/local/nvim/go_settings.vim
+source $HOME/AppData/local/nvim/keybindings.vim
+source $HOME/AppData/local/nvim/test_keybindings.vim
+source $HOME/AppData/local/nvim/camel_case_motion.vim
+source $HOME/AppData/local/nvim/whichkey_settings.vim
+source $HOME/AppData/local/nvim/treesitter.vim
+source $HOME/AppData/local/nvim/lazygit.vim
+source $HOME/AppData/local/nvim/colorscheme_switcher.vim
