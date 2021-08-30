@@ -9,7 +9,8 @@ call plug#begin("~/.vim/plugged")
 "Colorschemes
   Plug 'chriskempson/base16-vim'
   Plug 'rafi/awesome-vim-colorschemes'
-  Plug 'morhetz/gruvbox'
+  Plug 'gruvbox-community/gruvbox'
+  Plug 'Pocco81/Catppuccino.nvim'
 
 "Lsp and syntax
   Plug 'neoclide/coc.nvim', {'branch': 'release'}

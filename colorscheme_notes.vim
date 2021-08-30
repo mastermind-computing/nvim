@@ -33,3 +33,9 @@
 "twilight256
 "base16-bespin
 "base16-harmonic-dark
+"
+"
+"
+"twilight256
+"yellow-moon
+"base16-dracula
