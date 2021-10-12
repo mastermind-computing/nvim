@@ -23,12 +23,12 @@ return require('packer').startup(function()
       "onsails/lspkind-nvim"
     }
   }
-  use 'nvim-lua/completion-nvim'
   use "hrsh7th/vim-vsnip"
   use "hrsh7th/vim-vsnip-integ"
 
   --Colorscheme
   use 'gruvbox-community/gruvbox'
+  use 'tomasiser/vim-code-dark'
  
   --File Explorer
   use {

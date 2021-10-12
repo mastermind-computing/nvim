@@ -15,7 +15,15 @@ require'nvim-tree'.setup{
   view = {
     width = 60
   },
-  lsp_diagnostics = true,
+  diagnostics = {
+    enable = true,
+    icons = {
+      hint = "",
+      info = "",
+      warning = "",
+      error = "",
+    }
+  }
   -- update_cwd = true,
 }
 

@@ -35,9 +35,8 @@ cmd("set nowritebackup")
 
 g.mapleader = '\\'
 cmd("filetype plugin indent on")
-cmd("colorscheme gruvbox")
+cmd("colorscheme codedark")
 cmd("syntax enable")
-cmd("hi Normal guibg=NONE ctermbg=NONE")
 cmd("set noswapfile")
 
 cmd[[
@@ -50,9 +49,10 @@ augroup CursorLineOnlyInActiveWindow
 augroup END 
 ]]
 
-cmd[[
-augroup TransparentBackgroundOnColorschemeChanged
-    autocmd!
-    autocmd ColorScheme * hi Normal guibg=NONE ctermbg=NONE
-augroup END
-]]
+-- cmd("hi Normal guibg=NONE ctermbg=NONE")
+-- cmd[[
+-- augroup TransparentBackgroundOnColorschemeChanged
+--     autocmd!
+--     autocmd ColorScheme * hi Normal guibg=NONE ctermbg=NONE
+-- augroup END
+-- ]]
