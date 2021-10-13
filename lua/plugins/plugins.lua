@@ -29,7 +29,8 @@ return require('packer').startup(function()
   --Colorscheme
   use 'gruvbox-community/gruvbox'
   use 'tomasiser/vim-code-dark'
- 
+  use 'folke/lsp-colors.nvim' 
+
   --File Explorer
   use {
     'kyazdani42/nvim-tree.lua',
