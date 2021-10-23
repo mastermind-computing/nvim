@@ -53,7 +53,7 @@ map('i','<C-a>','<Esc>gg0vG$',default_map)
 
 --Buffers
 map('n','<space>bd',':bd!<CR>',default_map)
-map('n','<space>ba',':<c-u>up <bar> %bd <bar> e#<cr>',default_map)
+map('n','<space>ba',':<c-u>up <bar> %bd <bar> e#!<cr>',default_map)
 
 --Primeagean
 map('n','Y','y$',default_map)
