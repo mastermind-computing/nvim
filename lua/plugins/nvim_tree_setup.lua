@@ -1,8 +1,8 @@
 require('common')
 
-map('n','<C-n>',':NvimTreeToggle<CR>',default_map)
+map('n','<C-e>',':NvimTreeToggle<CR>',default_map)
 map('n','<leader>r',':NvimTreeRefresh<CR>',default_map)
-map('n','<leader>n',':NvimTreeFindFile<CR>',default_map)
+map('n','<leader>e',':NvimTreeFindFile<CR>',default_map)
 
 cmd([[
 let g:nvim_tree_auto_ignore_ft = [ 'startify', 'dashboard' ] 

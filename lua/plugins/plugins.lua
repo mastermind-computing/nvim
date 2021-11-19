@@ -46,6 +46,7 @@ return require('packer').startup(function()
   use 'mhinz/vim-startify'
   use 'liuchengxu/vim-which-key'
   use 'jiangmiao/auto-pairs'
+  use 'terryma/vim-multiple-cursors'
 
   use 'xolox/vim-misc'
   use 'xolox/vim-colorscheme-switcher'
@@ -72,6 +73,10 @@ return require('packer').startup(function()
   --Go
   use 'golang/vscode-go'
   use 'fatih/vim-go'
+
+  --Typescript and Javascript
+  use "jose-elias-alvarez/null-ls.nvim"
+  use "jose-elias-alvarez/nvim-lsp-ts-utils"
 
 end)
 
