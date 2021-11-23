@@ -93,5 +93,17 @@ nvim_lsp.tsserver.setup({
         on_attach(client, bufnr)
     end,
 })
+
+nvim_lsp.jsonls.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  commands = {
+    Format = {
+      function()
+        vim.lsp.buf.range_formatting({},{0,0},{vim.fn.line("$"),0})
+      end
+    }
+  }
+}
 require("null-ls").config({})
 nvim_lsp["null-ls"].setup({ on_attach = on_attach })

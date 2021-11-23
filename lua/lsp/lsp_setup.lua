@@ -1,1 +1,1 @@
-require('lsp/lsp_config')
+-- require('lsp/lsp_config')

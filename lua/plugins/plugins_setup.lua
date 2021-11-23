@@ -1,6 +1,6 @@
-require('plugins/nvim_tree_setup')
+-- require('plugins/nvim_tree_setup')
 require('plugins/go_setup')
-require('plugins/nvim_cmp_setup')
+-- require('plugins/nvim_cmp_setup')
 require('plugins/startify_setup')
 require('plugins/telescope_setup')
 require('plugins/treesitter_setup')

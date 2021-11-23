@@ -1,30 +1,35 @@
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
-  -- Lsp
-  use 'neovim/nvim-lspconfig'
-  use 'nvim-lua/lsp_extensions.nvim'
+  ---- Lsp nvim-lspconfig
+  -- use 'neovim/nvim-lspconfig'
+  -- use 'nvim-lua/lsp_extensions.nvim'
   -- use 'glepnir/lspsaga.nvim'
   -- use {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}
   -- use 'ray-x/navigator.lua'
+  -- use {
+  --   "hrsh7th/nvim-cmp",
+  --   requires = {
+  --     "hrsh7th/vim-vsnip",
+  --     "hrsh7th/cmp-buffer",
+  --     "hrsh7th/cmp-path",
+  --     "hrsh7th/cmp-nvim-lsp",
+  --     "hrsh7th/cmp-vsnip",
+  --     "onsails/lspkind-nvim"
+  --   }
+  -- }
+  -- use "hrsh7th/vim-vsnip"
+  -- use "hrsh7th/vim-vsnip-integ"
+ 
+  ---- Lsp Coc
+  use 'neoclide/coc.nvim'
+  use 'fannheyward/telescope-coc.nvim'
+
   use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
   }
   use 'nvim-treesitter/nvim-treesitter-textobjects'
-  use {
-    "hrsh7th/nvim-cmp",
-    requires = {
-      "hrsh7th/vim-vsnip",
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-path",
-      "hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/cmp-vsnip",
-      "onsails/lspkind-nvim"
-    }
-  }
-  use "hrsh7th/vim-vsnip"
-  use "hrsh7th/vim-vsnip-integ"
 
   --Colorscheme
   use 'gruvbox-community/gruvbox'
@@ -32,10 +37,10 @@ return require('packer').startup(function()
   use 'folke/lsp-colors.nvim' 
 
   --File Explorer
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = 'kyazdani42/nvim-web-devicons'
-  }
+  -- use {
+  --   'kyazdani42/nvim-tree.lua',
+  --   requires = 'kyazdani42/nvim-web-devicons'
+  -- }
 
   --Utilities
   use 'machakann/vim-highlightedyank'
