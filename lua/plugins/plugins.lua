@@ -32,9 +32,10 @@ return require('packer').startup(function()
   use 'nvim-treesitter/nvim-treesitter-textobjects'
 
   --Colorscheme
-  use 'gruvbox-community/gruvbox'
+  use 'tjdevries/colorbuddy.vim'
   use 'tomasiser/vim-code-dark'
   use 'folke/lsp-colors.nvim' 
+  use 'flazz/vim-colorschemes'
 
   --File Explorer
   -- use {
@@ -46,7 +47,7 @@ return require('packer').startup(function()
   use 'machakann/vim-highlightedyank'
   use 'tpope/vim-surround'
   use 'justinmk/vim-sneak'
-  use 'tpope/vim-commentary'
+  use 'numToStr/Comment.nvim'
   use 'mbbill/undotree'
   use 'mhinz/vim-startify'
   use 'liuchengxu/vim-which-key'

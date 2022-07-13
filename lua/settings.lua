@@ -26,16 +26,16 @@ opt.shiftwidth=2
 opt.backspace='indent,eol,start'
 
 opt.cursorline=true
-opt.cursorcolumn=true
 opt.termguicolors=true
 
 opt.hidden=true
 cmd("set nobackup")
 cmd("set nowritebackup")
+cmd("set nowrap")
 
 g.mapleader = '\\'
 cmd("filetype plugin indent on")
-cmd("colorscheme gruvbox")
+cmd("colorscheme codedark")
 cmd("syntax enable")
 cmd("set noswapfile")
 
@@ -43,16 +43,16 @@ cmd[[
 augroup CursorLineOnlyInActiveWindow
   autocmd!
   autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorcolumn
   autocmd WinLeave * setlocal nocursorline
-  autocmd WinLeave * setlocal nocursorcolumn
 augroup END 
 ]]
 
 cmd("hi Normal guibg=NONE ctermbg=NONE")
+cmd("hi EndOfBuffer guibg=NONE ctermbg=None")
 cmd[[
 augroup TransparentBackgroundOnColorschemeChanged
     autocmd!
     autocmd ColorScheme * hi Normal guibg=NONE ctermbg=NONE
 augroup END
 ]]
+

@@ -9,9 +9,8 @@
   "go.goplsOptions": {
     "completeUnimported": true
   },
-  "dart.lineLength": 100,
+  "dart.lineLength": 80,
   "flutter.lsp.debug": true,
-  "flutter.sdk.path": "C:/flutter",
   "coc.preferences.formatOnSaveFiletypes": [
     "dart",
     "json",

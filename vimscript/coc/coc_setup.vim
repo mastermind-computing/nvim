@@ -1,10 +1,6 @@
 let g:coc_global_extensions = [
-  \ 'coc-flutter',
-  \ 'coc-snippets',
-  \ 'coc-tsserver',
   \ 'coc-eslint', 
   \ 'coc-prettier', 
-  \ 'coc-json', 
   \ 'coc-flutter',
   \ 'coc-snippets',
   \ 'coc-yaml',
