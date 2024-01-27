@@ -9,6 +9,7 @@ return {
   {
     "kdheepak/lazygit.nvim",
     -- optional for floating window border decoration
+    -- test comment
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
