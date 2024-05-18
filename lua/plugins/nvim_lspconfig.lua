@@ -5,6 +5,8 @@ return {
     opts = {
       ---@type lspconfig.options
       ---@diagnostic disable-next-line: missing-fields
+
+      -- format = { timeout_ms = 100 },
       servers = {
         dartls = {
           autostart = true,

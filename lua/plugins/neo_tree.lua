@@ -1,7 +1,7 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   keys = {
-    { "<leader>e", "<cmd>:Neotree reveal=true<cr>", desc = "Neotree Current File" },
+    { "<leader>e", "<cmd>:Neotree reveal=true toggle=true<cr>", desc = "Neotree Current File" },
   },
   opts = {
     window = {
