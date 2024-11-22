@@ -7,9 +7,11 @@ return {
   { "bluz71/vim-moonfly-colors" },
   { "oxfist/night-owl.nvim" },
   { "dasupradyumna/midnight.nvim" },
+  { "scottmckendry/cyberdream.nvim" },
+  { "tiagovla/tokyodark.nvim" },
+  { "Everblush/nvim" },
   --Colors
   { "Neevash/awesome-flutter-snippets" },
-  --
   {
     "kdheepak/lazygit.nvim",
     -- optional for floating window border decoration
