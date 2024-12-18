@@ -1,13 +1,15 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.coding.nvim-cmp",
     "lazyvim.plugins.extras.dap.core",
+    "lazyvim.plugins.extras.editor.telescope",
     "lazyvim.plugins.extras.lang.go",
     "lazyvim.plugins.extras.lang.omnisharp",
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.rust"
   ],
   "news": {
-    "NEWS.md": "7308"
+    "NEWS.md": "11229"
   },
   "version": 7
 }

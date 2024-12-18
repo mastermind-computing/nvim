@@ -15,6 +15,8 @@ if vim.fn.has("termguicolors") then
   vim.opt.termguicolors = true
 end
 
+cmd("")
+
 --Disable dart autosave
 -- vim.api.nvim_create_autocmd({ "FileType" }, {
 --   pattern = { "dart" },
@@ -22,3 +24,28 @@ end
 --     vim.b.autoformat = false
 --   end,
 -- })
+
+-- Disable cursorline for inactive window
+-- Create an augroup for managing autocmds
+local cursorline_group = vim.api.nvim_create_augroup("CursorLineOnlyInActiveWindow", { clear = true })
+
+-- Set cursorline when entering a window or buffer
+vim.api.nvim_create_autocmd({ "VimEnter", "WinEnter", "BufWinEnter" }, {
+  group = cursorline_group,
+  pattern = "*",
+  callback = function()
+    vim.wo.cursorline = true
+  end,
+})
+
+-- Unset cursorline when leaving a window
+vim.api.nvim_create_autocmd("WinLeave", {
+  group = cursorline_group,
+  pattern = "*",
+  callback = function()
+    vim.wo.cursorline = false
+  end,
+})
+
+-- Disable animations
+vim.g.snacks_animate = false

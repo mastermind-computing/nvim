@@ -1,15 +1,24 @@
 return {
   --Colors
-  { "tomasiser/vim-code-dark" },
-  { "ellisonleao/gruvbox.nvim" },
-  { "folke/tokyonight.nvim", opts = { transparent = false } },
-  { "Shatur/neovim-ayu" },
-  { "bluz71/vim-moonfly-colors" },
-  { "oxfist/night-owl.nvim" },
-  { "dasupradyumna/midnight.nvim" },
-  { "scottmckendry/cyberdream.nvim" },
-  { "tiagovla/tokyodark.nvim" },
-  { "Everblush/nvim" },
+  {
+    "ellisonleao/gruvbox.nvim",
+    init = function()
+      require("gruvbox").setup({
+        palette_overrides = {
+          dark0 = "#0d0d0d",
+        },
+        italic = {
+          strings = false,
+          emphasis = false,
+          comments = false,
+          operators = false,
+          folds = false,
+        },
+      })
+      vim.cmd("colorscheme gruvbox")
+    end,
+  },
+  { "zeioth/neon.nvim" },
   --Colors
   { "Neevash/awesome-flutter-snippets" },
   {
@@ -24,7 +33,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "ayu-dark",
+      colorscheme = "gruvbox",
     },
   },
   --
