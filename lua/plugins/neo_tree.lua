@@ -5,7 +5,7 @@ return {
   },
   opts = {
     window = {
-      width = 80,
+      width = 65,
       mappings = {
         ["Y"] = function(state)
           -- NeoTree is based on [NuiTree](https://github.com/MunifTanjim/nui.nvim/tree/main/lua/nui/tree)

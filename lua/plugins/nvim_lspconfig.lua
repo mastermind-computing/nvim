@@ -13,7 +13,7 @@ return {
       },
       servers = {
         dartls = {
-          cmd = { "dart", "language-server", "--protocol=lsp", "--enable-experiment=memory-profiling" },
+          -- cmd = { "dart", "language-server", "--protocol=lsp" },
           autostart = true,
           on_attach = function(client, _)
             client.server_capabilities.semanticTokensProvider = nil
@@ -23,10 +23,10 @@ return {
           },
           init_options = {
             closingLabels = true,
-            flutterOutline = true,
-            outline = true,
+            flutterOutline = false,
+            outline = false,
             suggestFromUnimportedLibraries = true,
-            onlyAnalyzeProjectsWithOpenFiles = true,
+            onlyAnalyzeProjectsWithOpenFiles = false,
           },
         },
       },
