@@ -1,35 +1,40 @@
 return {
   {
     "neovim/nvim-lspconfig",
-    ---@class PluginLspOpts
     opts = {
-      ---@diagnostic disable-next-line: undefined-doc-name
-      ---@type lspconfig.options
-      ---@diagnostic disable-next-line: missing-fields
-
-      -- format = { timeout_ms = 100 },
       inlay_hints = {
         enabled = false,
       },
       servers = {
-        dartls = {
-          -- cmd = { "dart", "language-server", "--protocol=lsp" },
-          autostart = true,
-          on_attach = function(client, _)
-            client.server_capabilities.semanticTokensProvider = nil
-          end,
-          settings = {
-            includeDependenciesInWorkspaceSymbols = false,
+        tailwindcss = {
+          filetypes = {
+            "html",
+            "css",
+            "scss",
+            "javascript",
+            "typescript",
+            "rust", -- enable in .rs files
           },
-          init_options = {
-            closingLabels = true,
-            flutterOutline = false,
-            outline = false,
-            suggestFromUnimportedLibraries = true,
-            onlyAnalyzeProjectsWithOpenFiles = false,
+          settings = {
+            tailwindCSS = {
+              includeLanguages = {
+                rust = "html", -- treat rust files like HTML
+              },
+              experimental = {
+                classRegex = {
+                  'class: "([^"]*)"', -- match RSX class: "..."
+                  'class:\\s*"([^"]*)"', -- match class: "..." with optional space
+                },
+                configFile = "./desktop/tailwind.config.js", -- path to your config
+              },
+              validate = true,
+              classAttributes = { "class", "className" },
+            },
           },
         },
       },
     },
   },
+  { "mason-org/mason.nvim", version = "^1.0.0" },
+  { "mason-org/mason-lspconfig.nvim", version = "^1.0.0" },
 }

@@ -49,3 +49,11 @@ vim.api.nvim_create_autocmd("WinLeave", {
 
 -- Disable animations
 vim.g.snacks_animate = false
+
+--Rust tailwind
+-- vim.api.nvim_create_autocmd("BufEnter", {
+--   pattern = "*.rs",
+--   callback = function()
+--     vim.bo.syntax = "html"
+--   end,
+-- })

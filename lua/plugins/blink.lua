@@ -1,5 +1,6 @@
 return {
   -- "Saghen/blink.cmp",
+  -- enabled = false,
   -- opts = {
   --   sources = {
   --     providers = {
